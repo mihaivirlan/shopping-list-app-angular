@@ -10,11 +10,9 @@ export class RecipeListComponent implements OnInit {
   @Output() recipeWasSelected = new EventEmitter<Recipe>();
   recipes: Recipe[] = [
     new Recipe('A Test Recipe',
-      'This is simply a test',
-       'https://cdn.pixabay.com/photo/2016/06/15/19/09/food-1459693_960_720.jpg'),
-    new Recipe('A Test Recipe',
-      'This is simply a test', 
-      'http://casseroleonline.com/wp-content/uploads/2017/11/chicken-escalope.jpg')
+      'This is simply a test', 'https://cdn.pixabay.com/photo/2016/06/15/19/09/food-1459693_960_720.jpg'),
+    new Recipe('Another Test Recipe',
+      'This is simply a test', 'http://casseroleonline.com/wp-content/uploads/2017/11/chicken-escalope.jpg')
   ];
 
   constructor() { }
